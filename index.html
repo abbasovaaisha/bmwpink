@@ -6,7 +6,7 @@
     <title>BMW - Розовый проект</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
- <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
     <!-- Header with Video -->
@@ -367,25 +367,26 @@
         </div>
         
         <form class="contact-form" id="contact-form">
-        <div class="form-group">
-    <label for="name">Ваше имя ы</label>
-    <input type="text" id="name" name="name" required>
-</div>
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" required>
+            </div>
             
             <div class="form-group">
                 <label for="email">Электронная почта</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            <!-- В основной форме контактов -->
-<div class="form-group">
-    <label for="phone">Телефон </label>
-    <input type="tel" id="phone" name="phone" required>
-</div>
+            
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
 
-<div class="form-group">
-    <label for="message">О себе </label>
-    <textarea id="message" name="message" placeholder="Расскажите о ваших пожеланиях (минимум 10 символов)..." required></textarea>
-</div>
+            <div class="form-group">
+                <label for="message">О себе</label>
+                <textarea id="message" name="message" placeholder="Расскажите о ваших пожеланиях (минимум 10 символов)..." required></textarea>
+            </div>
+            
             <button type="submit" class="btn">Отправить заявку</button>
             
             <div class="form-message" id="form-message"></div>
@@ -422,22 +423,20 @@
             <span class="close-modal">&times;</span>
             <h2>Связь с нами</h2>
             <form id="modal-contact-form">
-           
+                <div class="form-group">
+                    <label for="modal-name">Ваше имя</label>
+                    <input type="text" id="modal-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="modal-phone">Телефон</label>
+                    <input type="tel" id="modal-phone" name="phone" required>
+                </div>
 
-<!-- В модальной форме -->
- <div class="form-group">
-    <label for="modal-name">Ваше имя </label>
-    <input type="text" id="modal-name" name="name" required>
-</div>
-<div class="form-group">
-    <label for="modal-phone">Телефон </label>
-    <input type="tel" id="modal-phone" name="phone" required>
-</div>
-
-<div class="form-group">
-    <label for="modal-message">О себе </label>
-    <textarea id="modal-message" name="message" placeholder="Расскажите о ваших пожеланиях (минимум 10 символов)..." required></textarea>
-</div>
+                <div class="form-group">
+                    <label for="modal-message">О себе</label>
+                    <textarea id="modal-message" name="message" placeholder="Расскажите о ваших пожеланиях (минимум 10 символов)..." required></textarea>
+                </div>
                 
                 <button type="submit" class="btn">Отправить</button>
             </form>
